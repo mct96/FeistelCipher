@@ -54,7 +54,7 @@ byte unround(byte data, byte key, byte(*)(byte, byte)) {
     return (newLeftBits << 4 | newRightBits);
 }
 
-// Criptografa utilizando o algorimot de Feistel.
+// Criptografa utilizando o algoritmo de Feistel.
 string encrypt(string plaintext, char key[8], int rounds) {
     string cipher = plaintext;
 
@@ -74,7 +74,7 @@ string encrypt(string plaintext, char key[8], int rounds) {
     return cipher;
 }
 
-// Descriptografa utilizando o algorimot de Feistel.
+// Descriptografa utilizando o algoritmo de Feistel.
 string decrypt(string cipher, char key[8], int rounds) {
     string plaintext = cipher;
 
