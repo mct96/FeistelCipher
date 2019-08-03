@@ -95,20 +95,30 @@ string decrypt(string cipher, char key[8], int rounds) {
 }
 
 int main(int argc, char ** argv) {
+
     // Chave para criptografar.
     char key[8] = "=-÷×&";
 
     // Texto a ser criptografado.
-    string plaintext = "Matheus Cândido Teixeia";
+    string input{};
 
-    // Aplica as funções.
-    string encrypted = encrypt(plaintext, key, 7);
-    string decrypted = decrypt(encrypted, key, 7);
+    if (argc == 2)
+        cin >> input;
+    else
+        input = argv[2];
 
-    assert(plaintext == decrypted); // ✔
+    // Exibe o resuldado requisitado.
+    if (string{argv[1]} == "-e") {
+        // Criptografa a mensagem.
+        string encrypted = encrypt(input, key, 7);
 
-    cout << encrypted << endl;
-    cout << decrypted << endl;
+        cout << encrypted << endl;
+    } else if (string{argv[1]} == "-d") {
+        // Descriptogra a mensagem cifrada.
+        string decrypted = decrypt(input, key, 7);
+
+        cout << decrypted << endl;
+    }
 
     return 0;
 }
