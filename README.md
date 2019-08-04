@@ -1,5 +1,5 @@
 # Feistel Cipher
-Implementação do algoritmo de Feistel (Utilizando no DES) - Criptografia de chave simétrica.
+Implementação do algoritmo de Feistel (Utilizado no DES) - Criptografia de chave simétrica.
 
 # Como funciona?
   - Divida o bloco em duas partes: leftBlock e rightBlock.
