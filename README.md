@@ -3,8 +3,8 @@ Implementação do algoritmo de Feistel (Utilizado no DES) - Criptografia de cha
 
 # Como funciona?
   - Divida o bloco em duas partes: leftBlock e rightBlock.
-  - O rightBlock é deslocado para o leftBlock, tornando-se o rightBlock'.
-  - O leftBlock' é atribuído ao resultado de: ```leftBlock XOR F(rightBlock, Key)```. O resultado é deslocado para a direita.
+  - O rightBlock é deslocado para o leftBlock, tornando-se o leftBlock'.
+  - O rightBlock' é atribuído ao resultado de: ```leftBlock XOR F(rightBlock, Key)```. O resultado é deslocado para a direita.
   - Esse processo se repete ```N``` vezes, onde ```N``` é o número de rounds.
 
 # Características
