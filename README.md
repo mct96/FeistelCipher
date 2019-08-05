@@ -19,5 +19,5 @@ Implementação do algoritmo de Feistel (Utilizado no DES) - Criptografia de cha
   make
   ```
 
-# Demostração
+# Demonstração
 ![Demonstração](https://github.com/DarkMCT/host_images/blob/master/feistel/deepin-screen-recorder_dde-file-manager_20190803171123.gif?raw=true)
